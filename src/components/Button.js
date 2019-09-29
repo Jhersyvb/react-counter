@@ -4,7 +4,7 @@ const Button = ({ increment, onClickFunction }) => {
   const handleClick = () => {
     onClickFunction(increment)
   }
-  return <button onClick={handleClick}>+{increment}</button>
+  return <button onClick={handleClick}>{increment > 0 ? '+' : ''}{increment}</button>
 }
 
 export default Button
